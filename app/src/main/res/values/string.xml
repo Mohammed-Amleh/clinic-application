@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ClinicAppointmentApp">ClinicAppointmentApp</string>
+
+    <string-array name = "Tretment_type">
+        <item> Consultation </item>
+        <item> Hospitalization </item>
+    </string-array>
+
+    <string-array name = "specialite_spinner">
+        <item> Dentist </item>
+        <item> General practitioner </item>
+        <item> Ophthalmologist </item>
+        <item> Pediatrician </item>
+        <item> Radiologist </item>
+        <item> Rheumatologist </item>
+    </string-array>
+
+    <string-array name = "blood_spinner">
+        <item> A + </item>
+        <item> A- </item>
+        <item> B + </item>
+        <item> B- </item>
+        <item> AB + </item>
+        <item> AB- </item>
+        <item> O + </item>
+        <item> O- </item>
+    </string-array>
+</resources>

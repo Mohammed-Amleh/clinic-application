@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/parent_layout">
+
+        <ImageView
+            android:id="@+id/patient_item_image"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_anon_user_48dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/patient_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/patient_item_image"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/text_view_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/patient_item_image"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="sans-serif"
+            android:text="0612431582"
+            android:textColor="#009688" />
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/ic_chat_black_24dp" />
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_toStartOf="@+id/contact"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_call_black_24dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

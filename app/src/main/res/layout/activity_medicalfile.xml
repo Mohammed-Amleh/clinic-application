@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Medicalfile"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="83dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:srcCompat="@drawable/doctor"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/patient_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_name"
+            android:layout_marginStart="9dp"
+            android:text="@string/address"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/phone_number"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_address"
+
+            android:layout_marginStart="9dp"
+
+            android:text="@string/phone"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/patient_address"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/patient_name"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:maxLines="1"
+            android:text="@string/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#22BE87"
+            app:layout_constraintBottom_toTopOf="@+id/phone_number"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <Button
+            android:id="@+id/infobtn"
+            android:layout_width="52dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/ic_assignment_ind_black_24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.986"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/floatingActionButton"-->
+<!--            android:layout_width="61dp"-->
+<!--            android:layout_height="58dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_gravity="bottom|end"-->
+<!--            android:layout_marginEnd="52dp"-->
+<!--            android:layout_marginRight="52dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:clickable="true"-->
+<!--            android:scaleType="center"-->
+<!--            app:backgroundTint="@color/colorPrimary"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:srcCompat="@android:drawable/ic_menu_edit" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- 1 | Add TabLayout to handle tabs -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/activity_main_tabs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0F1EF"
+        app:tabIndicatorColor="@color/teal_700"
+        app:tabTextColor="#009688"
+        app:tabSelectedTextColor="#04554D"/>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPagerDossier"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_main_tabs"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:scaleType="center"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+    </RelativeLayout>
+
+</LinearLayout>

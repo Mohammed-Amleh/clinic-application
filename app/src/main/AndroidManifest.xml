@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.clinicapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/ClinicAppointmentApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.ClinicApplication"
+        tools:targetApi="m">
+
+        <activity android:name=".profileDoctorActivity" />
+        <activity android:name=".PatientRequestPage" />
+        <activity android:name=".MyPatientsActivity" />
+        <activity android:name=".MyCalendarDoctorActivity" />
+        <activity android:name=".EditProfileDoctorActivity" />
+        <activity android:name=".editProfilePatientActivity" />
+        <activity android:name=".DoctorAppointementActivity" />
+        <activity android:name=".ConfirmedAppointmensActivity" />
+        <activity android:name=".AppointementActivity" />
+        <activity android:name=".PatientInfoActivity" />
+        <activity android:name=".FicheInfo"/>
+        <activity android:name=".Activitysheet" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ProfilePatientActivity" />
+        <activity android:name=".Medicalfile" />
+        <activity android:name=".MyDoctorsAvtivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".PatientAppointementsActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".signinactivity" />
+        <activity android:name=".DoctorHomeActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- optional (needed if default theme has no action bar) -->
+
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

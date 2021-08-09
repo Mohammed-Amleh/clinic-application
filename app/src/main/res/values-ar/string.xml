@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name = "Tretment_type">
+        <item> استشارة </item>
+        <item> بالمشفى </item>
+    </string-array>
+
+    <string-array name = "specialite_spinner">
+        <item>  طبيب اسنان </item>
+        <item> طبيب عام </item>
+        <item> أخصائي بصريات </item>
+        <item> طبيب أطفال </item>
+        <item> أخصائي أشعة</item>
+        <item> أخصائي أمراض الروماتيزم</item>
+    </string-array>
+
+    <string-array name = "blood_spinner">
+        <item> A + </item>
+        <item> A- </item>
+        <item> B + </item>
+        <item> B- </item>
+        <item> AB + </item>
+        <item> AB- </item>
+        <item> O + </item>
+        <item> O- </item>
+    </string-array>
+
+
+</resources>

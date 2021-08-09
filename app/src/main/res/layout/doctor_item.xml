@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativehh"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/doctor_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/doctor"
+            tools:ignore="VectorDrawableCompat" />
+
+            <LinearLayout
+                android:id="@+id/linear_2"
+                android:layout_toEndOf="@+id/doctor_item_image"
+                android:layout_toStartOf="@+id/addDocBtn"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/doctor_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textStyle="bold"
+                android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/description"
+            android:layout_margin="5dp"
+            android:textColor="#009688" />
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/appointemenBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_green"
+            android:text="@string/book"
+
+            android:textColor="#0E7168" />
+        <Button
+            android:id="@+id/addDocBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/appointemenBtn"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_green"
+            android:text="@string/adddoctor"
+            android:textAllCaps="false"
+            android:textColor="#0E7168"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

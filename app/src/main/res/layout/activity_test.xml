@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="89dp"
+        android:padding="16dp"
+        app:sv_animationType="None"
+        app:sv_doneCircleColor="@color/colorAccent"
+        app:sv_doneStepLineColor="@color/colorAccent"
+        app:sv_doneStepMarkColor="@color/colorPrimary"
+        app:sv_doneTextColor="@color/colorAccent"
+        app:sv_selectedCircleColor="@color/teal_700"
+        app:sv_selectedStepNumberColor="@color/common_google_signin_btn_text_light"
+        app:sv_selectedTextColor="@color/black"
+        app:sv_stepPadding="12dp" />
+
+
+    <com.example.clinicapplication.info.NonSwipeViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/step_view"
+        android:layout_above="@+id/layout_button"
+        tools:ignore="MissingClass" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_previous_step"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/previous"
+            android:textColor="@color/teal_700"
+            app:backgroundTint="#CEE3E1" />
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:text="@string/next"
+            android:textColor="@color/teal_700"
+            app:backgroundTint="#CEE3E1" />
+
+    </LinearLayout>
+</RelativeLayout>
+

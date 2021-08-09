@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/empty"
+        android:orderInCategory="101"
+        android:title=""
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+
+            <item
+                android:id="@+id/option_all"
+                android:title="@string/all"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_general"
+                android:title="@string/general"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_Dentist"
+                android:title="@string/dentist"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/Ophthalmologist"
+                android:title="@string/ophthalmologist"
+
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/Pediatrician"
+                android:title="@string/pediatrician"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/Radiologist"
+                android:title="@string/radiologist"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/Rheumatologist"
+                android:title="@string/rheumatologist"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+</menu>
