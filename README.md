@@ -14,7 +14,7 @@ Clinic app is an application for your personal clinic. In this application inclu
 - Clinic Information
 - Doctor Information
 - Photos
-5. Ask Doctor (User can directly ask to doctor with simple message with FCM notification)
+5. Ask Doctor (User can directly ask to doctor with simple message with FCM notification) -- Soon
 6. User Account (Change profile, My Appointment)
 
 ![234942411_964730131046704_5897684751640656926_n](https://user-images.githubusercontent.com/31358315/128753941-0ebd485b-23ae-468b-b8ff-76299c920125.jpg)
